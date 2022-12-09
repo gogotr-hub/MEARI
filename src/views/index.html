@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/index.css">
+    <title>MEARI</title>
+</head>
+<body>    
+    <div class="container">
+        <div class="header">
+            <h2 class="title">점검알리미 / <span id="today"></span></h2>            
+            <div class="box">
+                <div class="search">
+                    <input type="text" id="fname" name="firstname" placeholder="게임 검색">
+                </div>
+                <div class="switcher">                    
+                    <span class="switcher_text">오늘 날짜 점검만 보기</span>
+                    <label class="switch">
+                        <input id="view_today" type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>            
+        </div>        
+        <div class="wrap">            
+            <div id="game_list">
+                <div class="line">
+                    <div class="line_info"><div class="g_name">로딩중입니다.. ⚡</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="float" onclick="refresh()">
+                <img class="reload_img" src="../public/assets/reload.png" width="60px" height="60px" alt="">
+            </button>
+        </div>
+        
+    </div>    
+</body>
+</html>
+<script>window.$ = window.jQuery = require('../public/jquery-3.6.1.min.js');</script>
+
+<!--html 태그 밖에서 호출!-->
+<script>
+    const {ipcRenderer, shell, Notification} = require('electron')
+    function refresh(){
+        ipcRenderer.send('noti')
+        $('#game_list').empty()
+        $('#game_list').append(`<div class="line"><div class="line_info"><div class="g_name">로딩중입니다.. ⚡</div></div></div>`)
+        render(true)
+    }
+
+    function render(refresh){        
+        //데이터 조회
+        const isRefresh = typeof(refresh) == 'boolean' ? refresh : false
+        
+        ipcRenderer.send('fetch', isRefresh)        
+        ipcRenderer.on('reply', (event, args)=>{            
+            const searchValue = $('#fname').val()
+            const searchList = searchValue ? Object.entries(args).map((x) => {
+                if(x[1].name.includes(searchValue)){
+                    return { ...x[1]}
+                }
+            }) : args
+
+            draw(searchList)
+        })
+        if(isRefresh){
+            console.count('fetch')
+        }        
+    }
+
+    function draw(gameList){
+        //내용 비우기
+        $('#game_list').empty()
+
+        Object.entries(gameList).forEach((item)=>{
+                const game      = item[1]
+                const today     = new Date()
+                const viewToday = $('#view_today').is(':checked')
+                const isToday   = viewToday && game && game.latest.includes(new Date().getDate()) > 0
+                
+                if(game && game.use && game.latest ){
+                    const date = new Date(game.updateDate)
+                    const updateString = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
+
+                    if(viewToday){                        
+                        if(isToday) append(game.name, game.url, game.latest, updateString)
+                    }else{
+                        append(game.name, game.url, game.latest, updateString)
+                    }
+                }
+            })
+    }
+
+    function append(name, url, latest, updateDate){
+        $('#game_list').append(`<div class="line"><div class="line_info"><div class="g_name">${name}<a class="g_link" href="${url}">🚀</a></div><div class="g_title">${latest.trim()}</div><div class="g_update">업데이트된시간 : ${updateDate}</div></div></div>`)       
+    }
+
+    function getHanjaWeek(day){
+        let hanjja = ''
+        switch(day){
+            case 0: hanjja = '日'; break;
+            case 1: hanjja = '月'; break;
+            case 2: hanjja = '火'; break;
+            case 3: hanjja = '水'; break;
+            case 4: hanjja = '木'; break;
+            case 5: hanjja = '金'; break;
+            case 6: hanjja = '土'; break;            
+        }
+        return hanjja
+    }
+
+
+    function onChangeGameSearch(){
+        render(false)
+    }
+
+    $(function(){
+        //event binding
+        $('#view_today').on('change', render)
+        $('#fname').on('change', onChangeGameSearch)        
+
+        //render
+        render(true)
+
+        //날짜        
+        const today = new Date()
+        $('#today').text(`${today.getMonth()+1}-${today.getDate()}(${getHanjaWeek(today.getDay())})`)
+
+        //30m interval
+        const refresh = setInterval(() => {            
+            render(true)
+        }, 1000 * 60 * 30);
+
+        //a tag open browser
+        $(document).on('click', 'a[href^="http"]', function(event) {
+            event.preventDefault();
+            shell.openExternal(this.href);
+        })
+
+        ipcRenderer.send('noti')
+    });
+</script>

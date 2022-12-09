@@ -1,0 +1,48 @@
+바람의나라,baram
+어둠의전설,lod
+일랜시아,elancia
+아스가르드,asgard
+크레이지아케이드,ca
+테일즈위버,tales
+메이플스토리,maplestory
+마비노기,mabinogi
+카트라이더,kart
+워록,warrock
+엘소드,elsword
+카운터스트라이크(카스) 온라인,csonline
+마비노기영웅전,heroes
+버블파이터,bf
+던전앤파이터,df
+서든어택,suddenattack
+사이퍼즈,cyphers
+프리스타일2,fs2
+로스트사가,lostsaga
+테일즈런너,talesrunner
+클로저스,closers
+메이플스토리2,maplestory2
+트리 오브 세이비어,tos
+테라,tera
+천애명월도,chunae
+드래곤네스트,redragonnest
+아스텔리아,astellia
+FIFA Online 4,fo4
+파이널판타지14,N/A
+Counter-Strike Nexon: Zombie,N/A
+프리스타일,fs
+프리스타일풋볼Z,fsfz
+아키에이지,archeage
+검은사막,blackdesert
+카트라이더 드리프트,kartriderdrift
+섀도우 아레나,shadowarena
+카운터사이드,N/A
+워헤이븐,hp
+커츠펠,kurtzpel
+베일드 엑스퍼트,pd
+바람의나라: 연,N/A
+던전앤파이터 모바일,N/A
+나이트워커,nightwalker
+메이플스토리M,N/A
+MOD,mod
+슈퍼피플,superpeople
+크로우즈,crowz
+그랜드체이스 클래식,grandchase

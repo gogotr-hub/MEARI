@@ -1,0 +1,419 @@
+{
+    "baram": {
+        "code": "baram",
+        "name": "바람의나라",
+        "url": "https://baram.nexon.com/Notice/List?noticeCode=3",
+        "query": "a",
+        "use": true,
+        "latest": "11/16(수) 테스트 서버 임시 점검 안내",
+        "updateDate": 1669002906989
+    },
+    "lod": {
+        "code": "lod",
+        "name": "어둠의전설",
+        "url": "https://lod.nexon.com/news/notice/list.asp",
+        "query": "table tr td a",
+        "use": true,
+        "latest": "(종료) [정기점검] 11/17(목) 정기점검 안내 (11:00~11:18)",
+        "updateDate": 1669002907081
+    },
+    "elancia": {
+        "code": "elancia",
+        "name": "일랜시아",
+        "url": "https://elancia.nexon.com/news/notice/list.asp",
+        "query": ".pd2 a",
+        "use": true,
+        "latest": "[정기점검] 11/17(목) 일랜시아 정기점검 안내",
+        "updateDate": 1669002906978
+    },
+    "asgard": {
+        "code": "asgard",
+        "name": "아스가르드",
+        "url": "https://asgard.nexon.com/News/Notice/List?Category=3",
+        "query": ".td_title",
+        "domain": "https://asgard.nexon.com/",
+        "use": true,
+        "latest": "                            (종료) [정기점검] 11/17(목) 점검 안내 (9:00~9:50)\n                            \n                        ",
+        "updateDate": 1669002907054
+    },
+    "ca": {
+        "code": "ca",
+        "name": "크레이지아케이드",
+        "url": "https://ca.nexon.com/News/Notice/List",
+        "query": "#contents .tit",
+        "domain": "",
+        "use": true,
+        "latest": "(수정)10/13(목) 크레이지아케이드 임시점검 안내",
+        "updateDate": 1669002907221
+    },
+    "tales": {
+        "code": "tales",
+        "name": "테일즈위버",
+        "url": "https://tales.nexon.com/News/Notice?search=cg%3D2",
+        "query": ".from .text",
+        "domain": "",
+        "use": true,
+        "latest": "11/17(목) 정식 서버 정기점검 안내",
+        "updateDate": 1669002907103
+    },
+    "maplestory": {
+        "code": "maplestory",
+        "name": "메이플스토리",
+        "url": "https://maplestory.nexon.com/News/Notice/All",
+        "query": ".news_board a span",
+        "domain": "",
+        "use": true,
+        "latest": "",
+        "updateDate": ""
+    },
+    "mabinogi": {
+        "code": "mabinogi",
+        "name": "마비노기",
+        "url": "https://mabinogi.nexon.com/page/news/notice_list.asp",
+        "query": ".notice a",
+        "domain": "",
+        "use": true,
+        "latest": "",
+        "updateDate": ""
+    },
+    "kart": {
+        "code": "kart",
+        "name": "카트라이더",
+        "url": "https://kart.nexon.com/Kart/News/Notice/List.aspx",
+        "query": ".tit_bx a",
+        "domain": "",
+        "use": true,
+        "latest": " 11/17(목) 넥슨 정기점검 안내",
+        "updateDate": 1669002907113
+    },
+    "warrock": {
+        "code": "warrock",
+        "name": "워록",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "elsword": {
+        "code": "elsword",
+        "name": "엘소드",
+        "url": "https://elsword.nexon.com/News/Notice/List?n4ArticleCategorySN=3",
+        "query": ".l_subject .subject",
+        "domain": "",
+        "use": true,
+        "latest": "(수정) 11/17(목) 정기점검 안내",
+        "updateDate": 1669002906946
+    },
+    "csonline": {
+        "code": "csonline",
+        "name": "카운터스트라이크(카스) 온라인",
+        "url": "https://csonline.nexon.com/News/Notice/List?sc1=3",
+        "query": ".noti_tit a",
+        "domain": "",
+        "use": true,
+        "latest": "(조기오픈) 11/10(목) 카스온라인 임시점검 안내 (오후 4:00 ~ 오후 4:35)",
+        "updateDate": 1669002907169
+    },
+    "heroes": {
+        "code": "heroes",
+        "name": "마비노기영웅전",
+        "url": "https://heroes.nexon.com/news/notice/list?Category=2",
+        "query": ".tit .tx",
+        "domain": "",
+        "use": true,
+        "latest": "(완료) 10/13(목) 오후 2시 정식 서버 긴급점검 안내",
+        "updateDate": 1669002907323
+    },
+    "bf": {
+        "code": "bf",
+        "name": "버블파이터",
+        "url": "https://bf.nexon.com/News/Notice/List?sc1=1",
+        "query": ".subject a",
+        "domain": "",
+        "use": true,
+        "latest": "11/17(목) 넥슨 정기점검 안내",
+        "updateDate": 1669002907229
+    },
+    "df": {
+        "code": "df",
+        "name": "던전앤파이터",
+        "url": "https://df.nexon.com/df/news/notice",
+        "query": ".tit a",
+        "domain": "",
+        "use": true,
+        "latest": "",
+        "updateDate": ""
+    },
+    "suddenattack": {
+        "code": "suddenattack",
+        "name": "서든어택",
+        "url": "https://sa.nexon.com/news/notice/list.aspx",
+        "query": ".subject a",
+        "domain": "",
+        "use": true,
+        "latest": "(수정) 11/17(목) 서든어택 정기점검 안내 (오전 7시 30분)",
+        "updateDate": 1669002907255
+    },
+    "cyphers": {
+        "code": "cyphers",
+        "name": "사이퍼즈",
+        "url": "https://cyphers.nexon.com/article/notice",
+        "query": ".lst_tit",
+        "domain": "",
+        "use": true,
+        "latest": "                            11월 17일 정기점검 보상지급 일정\n                        ",
+        "updateDate": 1669002907344
+    },
+    "fs2": {
+        "code": "fs2",
+        "name": "프리스타일2",
+        "url": "https://fs2.nexon.com/web/news/notice/list.do?seq=&pageIndex=1&searchBdsubcate=001003&searchCondition=T&searchKeyword=",
+        "query": ".al-l a",
+        "domain": "",
+        "use": true,
+        "latest": "[안내] 11/18(금) 임시점검 안내(완료)",
+        "updateDate": 1669002907305
+    },
+    "lostsaga": {
+        "code": "lostsaga",
+        "name": "로스트사가",
+        "url": "http://www.lostsaga.com/news/notice_list.asp?board=check",
+        "query": ".left a",
+        "domain": "",
+        "use": true,
+        "latest": "11월 9일(수) 임시점검 안내",
+        "updateDate": 1669002907183
+    },
+    "talesrunner": {
+        "code": "talesrunner",
+        "name": "테일즈런너",
+        "url": "https://tr.sgp.nexon.com/news/notice.asp",
+        "query": ".subject a",
+        "domain": "",
+        "use": true,
+        "latest": "",
+        "updateDate": ""
+    },
+    "closers": {
+        "code": "closers",
+        "name": "클로저스",
+        "url": "https://closers.nexon.com/News/Notice/List?n4ArticleCategorySN=3",
+        "query": ".tit a",
+        "domain": "",
+        "use": true,
+        "latest": "(완료) 11/18(금) 임시 서버점검 안내 (오전 11시 ~ 오후 12시 30분)",
+        "updateDate": 1669002907400
+    },
+    "maplestory2": {
+        "code": "maplestory2",
+        "name": "메이플스토리2",
+        "url": "https://maplestory2.nexon.com/News/Notice",
+        "query": ".desc",
+        "domain": "",
+        "use": true,
+        "latest": "                                            11/17(목) 정기점검이 진행되지 않습니다.\n                                        ",
+        "updateDate": 1669002907493
+    },
+    "tos": {
+        "code": "tos",
+        "name": "트리 오브 세이비어",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "tera": {
+        "code": "tera",
+        "name": "테라",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "chunae": {
+        "code": "chunae",
+        "name": "천애명월도",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "redragonnest": {
+        "code": "redragonnest",
+        "name": "드래곤네스트",
+        "url": "http://dn.nexon.com/news/notice.html",
+        "query": ".board-subject .text",
+        "domain": "",
+        "use": true,
+        "latest": "11/17 (목) 서버 정기 점검 정상화 안내",
+        "updateDate": 1669002907274
+    },
+    "astellia": {
+        "code": "astellia",
+        "name": "아스텔리아",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "fo4": {
+        "code": "fo4",
+        "name": "FIFA Online 4(피파 온라인4)",
+        "url": "https://fifaonline4.nexon.com/news/notice/list",
+        "query": ".subject",
+        "domain": "",
+        "use": true,
+        "latest": "(조기 오픈) 11/17(목) 정기점검 (오전 6시 ~ 오전 11시 55분)  ",
+        "updateDate": 1668765437774
+    },
+    "fs": {
+        "code": "fs",
+        "name": "프리스타일",
+        "url": "https://fs.joycity.com/web/news/notice/list.do?seq=&pageIndex=1&searchBdsubcate=001003&searchCondition=T&searchKeyword=",
+        "query": ".al-l a",
+        "domain": "",
+        "use": true,
+        "latest": "[완료] 11/9(수) 정기점검",
+        "updateDate": 1669002907523
+    },
+    "fsfz": {
+        "code": "fsfz",
+        "name": "프리스타일풋볼Z",
+        "url": "https://fsfz.game.naver.com/boards/notice?categoryId=2",
+        "query": "th a",
+        "domain": "",
+        "use": true,
+        "latest": "[점검]\t\t\t\t\t\t10월27일(목) 정기점검\n\t\t\t\t\t\t",
+        "updateDate": 1669002907442
+    },
+    "archeage": {
+        "code": "archeage",
+        "name": "아키에이지",
+        "url": "https://archeage.nexon.com/mboards/notice",
+        "query": ".cont a",
+        "domain": "",
+        "use": true,
+        "latest": "\t\t\t [완료] 11월 17일(목) 정기 점검 안내    ",
+        "updateDate": 1669002907559
+    },
+    "blackdesert": {
+        "code": "blackdesert",
+        "name": "검은사막",
+        "url": "https://www.kr.playblackdesert.com/ko-KR/News/Notice?boardType=1",
+        "query": ".title .line_clamp",
+        "domain": "",
+        "use": true,
+        "latest": "[완료] 11월 18일(금) 서버 임시 점검 안내 (최종 수정 : 2022-11-18 07:30)",
+        "updateDate": 1669002907591
+    },
+    "kartriderdrift": {
+        "code": "kartriderdrift",
+        "name": "카트라이더 드리프트",
+        "url": "https://kartdrift.nexon.com/kartdrift/ko/news/maintenance/list",
+        "query": ".board_wrap .tit span",
+        "domain": "",
+        "use": true,
+        "latest": "(완료) 9/3(토) 임시점검 안내 (오전 6시 ~ 7시 30분)",
+        "updateDate": 1668765437793
+    },
+    "shadowarena": {
+        "code": "shadowarena",
+        "name": "섀도우 아레나",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "hp": {
+        "code": "hp",
+        "name": "워헤이븐",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "kurtzpel": {
+        "code": "kurtzpel",
+        "name": "커츠펠",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "pd": {
+        "code": "pd",
+        "name": "베일드 엑스퍼트",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "nightwalker": {
+        "code": "nightwalker",
+        "name": "나이트워커",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "mod": {
+        "code": "mod",
+        "name": "MOD",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "superpeople": {
+        "code": "superpeople",
+        "name": "슈퍼피플",
+        "url": "",
+        "query": "",
+        "domain": "",
+        "use": false,
+        "latest": "",
+        "updateDate": ""
+    },
+    "crowz": {
+        "code": "crowz",
+        "name": "크로우즈",
+        "url": "https://www.playcrowz.com/notice?Ct=KR",
+        "query": ".icon-box h4",
+        "domain": "https://www.playcrowz.com/",
+        "use": true,
+        "latest": "",
+        "updateDate": ""
+    },
+    "grandchase": {
+        "code": "grandchase",
+        "name": "그랜드체이스 클래식",
+        "url": "https://grandchase.nexon.com/Notice/List",
+        "query": ".notice_text",
+        "domain": "https://grandchase.nexon.com/",
+        "use": true,
+        "latest": "(완료)(수정) 11/16(수) 정기 점검 안내",
+        "updateDate": 1668765437768
+    }
+}
